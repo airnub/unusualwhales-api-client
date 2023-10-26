@@ -1,0 +1,20 @@
+# Tests
+test/
+dist/test/
+coverage/
+
+# Source files
+src/**/*.ts
+
+# Documentation
+docs/
+
+# Other Files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Configurations and old tarballs
+tsconfig.json
+*.tgz

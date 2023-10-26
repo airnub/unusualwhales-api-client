@@ -1,0 +1,104 @@
+// Copyright (c) 2023 Airnub Technologies LTD. All rights reserved.
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
+export interface OptionsScreenerQueryParams {
+    ticker_symbol?: string;
+    sectors?: string;
+    min_stock_price?: number;
+    max_stock_price?: number;
+    is_otm?: boolean;
+    min_dte?: number;
+    max_dte?: number;
+    min_diff?: number;
+    max_diff?: number;
+    min_strike?: number;
+    max_strike?: number;
+    type?: string;
+    expiry_dates?: string;
+    min_marketcap?: number;
+    max_marketcap?: number;
+    min_volume?: number;
+    max_volume?: number;
+    min_multileg_volume_ratio?: number;
+    max_multileg_volume_ratio?: number;
+    min_floor_volume_ratio?: number;
+    max_floor_volume_ratio?: number;
+    min_perc_change?: number;
+    max_perc_change?: number;
+    min_daily_perc_change?: number;
+    max_daily_perc_change?: number;
+    min_premium?: number;
+    max_premium?: number;
+    min_volume_oi_ratio?: number;
+    max_volume_oi_ratio?: number;
+    min_open_interest?: number;
+    max_open_interest?: number;
+    min_floor_volume?: number;
+    max_floor_volume?: number;
+    vol_greater_oi?: boolean;
+    issue_types?: string;
+    order?: 'total_oi_change';
+    order_direction?: string;
+}
+
+export interface StockScreenerQueryParams {
+    ticker?: string;
+    issue_types?: string;
+    min_change?: string;
+    max_change?: string;
+    min_underlying_price?: number;
+    max_underlying_price?: number;
+    is_s_p_500?: boolean;
+    has_dividends?: boolean;
+    sectors?: string;
+    min_marketcap?: number;
+    max_marketcap?: number;
+    min_perc_3_day_total?: string;
+    max_perc_3_day_total?: string;
+    min_perc_3_day_call?: string;
+    max_perc_3_day_call?: string;
+    min_perc_3_day_put?: string;
+    max_perc_3_day_put?: string;
+    min_perc_30_day_total?: string;
+    max_perc_30_day_total?: string;
+    min_perc_30_day_call?: string;
+    max_perc_30_day_call?: string;
+    min_perc_30_day_put?: string;
+    max_perc_30_day_put?: string;
+    min_total_oi_change_perc?: string;
+    max_total_oi_change_perc?: string;
+    min_call_oi_change_perc?: string;
+    max_call_oi_change_perc?: string;
+    min_put_oi_change_perc?: string;
+    max_put_oi_change_perc?: string;
+    min_implied_move?: string;
+    max_implied_move?: string;
+    min_implied_move_perc?: string;
+    max_implied_move_perc?: string;
+    min_volatility?: string;
+    max_volatility?: string;
+    min_iv_rank?: string;
+    max_iv_rank?: string;
+    min_volume?: string;
+    max_volume?: string;
+    min_call_volume?: string;
+    max_call_volume?: string;
+    min_put_volume?: string;
+    max_put_volume?: string;
+    min_premium?: string;
+    max_premium?: string;
+    min_call_premium?: string;
+    max_call_premium?: string;
+    min_put_premium?: string;
+    max_put_premium?: string;
+    min_net_premium?: string;
+    max_net_premium?: string;
+    min_oi?: string;
+    max_oi?: string;
+    min_oi_vs_vol?: string;
+    max_oi_vs_vol?: string;
+    min_put_call_ratio?: string;
+    max_put_call_ratio?: string;
+    order?: string;  // Enum values here
+    order_direction?: string;
+}

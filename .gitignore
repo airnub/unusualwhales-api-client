@@ -1,0 +1,17 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore dist directory
+dist/
+
+# Ignore Jest coverage directory
+coverage/
+
+# Ignore log files
+*.log
+
+# Other Files
+.DS_Store
+
+# Tarballs
+*.tgz
